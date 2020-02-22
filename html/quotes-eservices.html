@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- $Id: EServiceBaseLayoutPage.html,v 1.13 2017/04/06 18:47:44 zliu Exp $ -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome Page - Massachusetts Trial Court 2</title>
+	<script type="text/javascript">window.cjsBrowserRenderStartTime = new Date();</script>
+	<link rel="icon" type="image/png" href="images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/eaccess.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/initialize.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_fonts.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_header.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_application.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_globalNav.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_footer.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_forms.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_containers.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_tables.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_buttons.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/efile.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/epay.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_Calendar.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_configStyles.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_PortalDashboard.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_NotifyPage.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_printStyle.css?v=1.25.06" media="print"/>
+	<link href="css/eServ_Phone.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:0px) and (max-device-width:380px)"/>
+	<link href="css/eServ_Tablet.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:381px) and (max-device-width:900px)">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!--[if lte IE 7]>
+	
+	<style type="text/css">
+	.ui-dropdown-content ul ul li { display: inline; width: 100%; }
+	.ui-dropdown-content ul ul li a { border-right: none; width: 100%; display: inline-block; }
+	</style>
+  <![endif]-->
+<script type="text/javascript" src="resources/org.odlabs.wiquery.core.commons.CoreJavaScriptResourceReference/jquery/jquery-1.5.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.odlabs.wiquery.ui.themes.WiQueryCoreThemeResourceReference/uilightness/jquery-ui-1.8.10.custom.css" />
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.core.CoreUIJavaScriptResourceReference/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJQueryUICustomJavaScriptResourceReference/jquery.ui.custom.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJavaScriptResourceReference/jquery.layout.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowJavaScriptResourceReference/jquery.window.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.widget.WidgetJavascriptResourceReference/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.mouse.MouseJavascriptResourceReference/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.position.PositionJavascriptResourceReference/jquery.ui.position.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.dialog.DialogJavaScriptResourceReference/jquery.ui.dialog.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.button.ButtonJavascriptResourceReference/jquery.ui.button.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.draggable.DraggableJavaScriptResourceReference/jquery.ui.draggable.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.resizable.ResizableJavaScriptResourceReference/jquery.ui.resizable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.BodyLayoutPlugin/layout/jquery.layout.css" />
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowCSSResourceReference/jquery.window.css" />
+<script type="text/javascript" id="wiquery-gen-1582373306195"><!--/*--><![CDATA[/*><!--*/
+(function($) {
+$(document).ready(function() {
+window.bodyLayout=$('#body').layout({name: 'bodyLayout', defaults: {size: 'auto', minSize: 50, paneClass: 'pane', resizerClass: 'resizer', togglerClass: 'toggler', buttonClass: 'button', togglerLength_open: 35, togglerLength_closed: 35, fxName: 'slide', contentSelector: '.content', contentIgnoreSelector: 'span', hideTogglerOnSlide: true, togglerTip_open: 'Close This Pane', togglerTip_closed: 'Open This Pane', resizerTip: 'Resize This Pane', fxSpeed_open: 750, fxSpeed_close: 1500, fxSettings_open: { easing: 'easeInQuint' }, fxSettings_close: { easing: 'easeInQuint' }}, north: {size: 82, minSize: 82, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, south: {size: 44, maxSize: 44, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, east: {initHidden: true, paneSelector: '#EastPane'}, west: {size: 'auto', minSize: 200, togglerTip_open: 'Close Navigations', togglerTip_closed: 'Open Navigations', resizerTip: 'Resize Navigations', closable: false, resizable: false, fxName: 'none', paneSelector: '#WestPane'}, center: {paneSelector: '#mainContent'}});
+$('#id2').dialog({autoOpen: false, position: 'center', open: function(event, ui) {
+$('#id2').parents('.ui-dialog:first').find('.ui-dialog-titlebar-close').hide();
+}, minimizable: false, maximizable: false, modal: true, resizable: false, title: 'Please Wait...'});
+});
+})(jQuery);
+
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/modal.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.css" />
+<script type="text/javascript" ><!--/*--><![CDATA[/*><!--*/
+Wicket.Event.add(window, "load", function(event) { setTimeout("var wcall=wicketAjaxGet('?x=Nr*Bti3rTaxjs09Kgy-qkr0zMLY6cD5jnzudhhCRXTnS*sfJXT6I5QJMqaJ54KXHL*IR6UwgabUCv7dIkMLTj6e36KUjK4W3qO-sIQSW*8fhznhm7p54ogwGr0S1FWAx',function() { }.bind(this),function() { }.bind(this), function() {var c = Wicket.$('id4'); return typeof(c) != 'undefined' && c != null}.bind(this));", 60000);;});
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body id="body">
+<div class="skipLink"><a href="#mainContent">Skip to main content</a></div>
+<div class="ui-layout-north" role="banner">
+	<div id="header">
+	<!-- <span class="visually-hidden">CourtView</span> -->
+	<div class="globalNavigation" id="id5">
+<ul id="navigationSectionLeft" class="MenuBarHorizontal">
+<!--
+	<li wicket:id="menu"></li>
+-->
+	<li class="navLoggedInUser"><a id="id6" href="#" onclick="var wcall=wicketAjaxGet('?x=Nr*Bti3rTaxjs09Kgy-qkhT5I3QhOjxXt-chOwAJdrjwhJG40JnAUDn5xUPH69lnRGYIqIQgmFfZdc*WzvO6k4DtcA368WWv*j2r9qP3ix6-PR2byYkxaTBoPRLwaOcn',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id6') != null;}.bind(this));return !wcall;" title="Your Account"><span title="Manage Your Account"></span></a></li>
+	<li class="currentPage"><a class="link" href="home.page">Home<span class="visually-hidden">currently selected</span></a></li>
+	
+ 	
+	
+	
+	
+	<li></li>
+	
+	
+	
+</ul>
+<ul id="navigationSectionRight" class="MenuBarHorizontal">
+	
+	
+	<li><a class="link" id="id7" href="login.page">Log on</a></li>
+	
+	<li class="link"><span aria-label="Print" role="link" tabindex="0" class="print" title="Print" id="printLink" onclick="return window.print();"></span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="Home">
+<div id="WestPane" class="ui-layout-west">
+	
+<div class="dynamicNav" id="id8" role="navigation" aria-label="navigation menu">
+	<div class="menuSection">
+	<div class="sectionHeader">
+		<h3><span title="">Links</span></h3>
+		
+	</div>
+	<ul class="menuLinks">
+		<li><span>
+<a href="https://www.mass.gov/lists/land-court-masscourts-reports" title="">Land Court Reports</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/service-details/masscourts-email-questions" title="">Email a Question</a>
+</span></li><li><span>
+<a href="http://survey.vovici.com/se/54861F09525D6589" title="">Feedback Survey</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/lists/masscourts-detailed-instructions" title="">Detailed Instructions</a>
+</span></li>
+		<li></li>
+	</ul>
+	</div>
+	
+</div>
+
+
+
+
+
+</div>
+<div id="EastPane" class="ui-layout-east">
+</div>
+<div id="mainContent" role="main" tabindex="-1">
+	
+	<div class="feedback" id="ida">
+  
+</div>
+	<form id="idb" method="post" action="?x=Nr*Bti3rTaxjs09Kgy-qkqm9B53UWoGMgBOYUmYF*OuR46vlbg5FEkkJfVVoXsfwHkyisc5tA6DCzhSpzm2NjVPlcP8urCXv"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="idb_hf_0" id="idb_hf_0" /></div><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="text" autocomplete="false" aria-label="hidden submit element" /><input type="submit" name="linkFrag:beginButton" onclick=" var b=document.getElementById('idc'); if (b!=null&amp;&amp;b.onclick!=null&amp;&amp;typeof(b.onclick) != 'undefined') {  var r = b.onclick.bind(b)(); if (r != false) b.click(); } else { b.click(); };  return false;"  /></div>
+		
+<div id="welcomePageHeader" class="adminMainHeader"><h1><span>Welcome Page</span></h1></div>
+<!-- div class="adminContentHead subsection2 bgClr2"><span wicket:id="portalName"></span></div -->
+<div class="formSec bgClr1 welcomePageSec">
+    <div class="inputSection" style="border:none; padding:0;">
+		<div style="display:block;"><p>&nbsp;</p>
+<p><span style="color: #ff0000;"><span style="color: #000000; font-size: small;"><span style="font-size: small;"><span style="color: #ff0000;"><span style="color: #000000; font-size: small;"><span style="font-size: small;"><span style="font-size: small;"><strong>Important Notice about eAccess</strong></span></span></span></span></span></span></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">The case information contained within this web site is generated from computerized records maintained by the <em>Massachusetts Trial Court</em> and is deemed to be public information. While every effort is made to assure the data is accurate and current, it must be accepted and used by the recipient with the understanding that no warranties, expressed or implied, concerning the accuracy, reliability or suitability of this data have been made. The <em>Trial Court</em>, and the developers of this web site assume no liability whatsoever associated with the use or misuse of the data contained herein.&nbsp; <strong>The case information from this web site is not the official record of the <em>Trial Court</em>.&nbsp;</strong></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">Access to the Massachusetts eAccess site by a site data harvester or any similar software intended to discover and extract data from a website through automated, repetitive querying for the purpose of collecting such data is expressly prohibited.</span><span style="font-family: times new roman,times; font-size: small;"><br /></span></p>
+<p><span style="font-size: small;"><strong>Internet Public Access</strong></span></p>
+<p><span style="font-size: small;"><span style="color: #ff0000;"><span style="font-size: small;"><span style="font-size: small;"><span style="color: #ff0000; font-size: small;"><span style="font-size: small;"><span style="font-size: small;"><span style="color: #0000ff; font-size: small;"><span style="color: #0000ff; font-size: small;"><span style="color: #0000ff; font-size: small;">Housing Court Division Name Changes:</span></span></span></span></span></span></span></span></span></span></p>
+<p><span style="color: #0000ff; font-size: small;">(1) The Boston Housing Court is now the Eastern Housing Court</span></p>
+<p><span style="font-size: small;"><span style="color: #0000ff;">(2) The Worcester Housing Court is now the Central Housing Court</span></span></p>
+<p><span style="font-size: small;"><span style="color: #0000ff;">(3) Metro South is the new Housing Court Division<br /></span></span></p>
+<p>&nbsp;&nbsp;<span style="font-size: small;"><br /></span></p>
+<p><span style="color: #0000ff; font-size: small;">Supported Browsers:&nbsp; Internet Explorer, Version 7 or higher; Firefox; Chrome</span>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: small;"><br /></span></p>
+<p>&nbsp;</p></div></div>
+	
+	<div id="acknowledgement">
+		
+		<div id="idd">
+<div class="subsection1 bgClr2">
+<label class="captchaInstructions">Please Check the I&#039;m not a Robot Box to Continue.</label>
+<div class="g-recaptcha" name="recaptchaPanel:recaptchaDiv" data-sitekey="6LeCGQ4UAAAAANCgu2BPe2k-bTVIfE717bkdD_5H"></div>
+</div>
+</div>
+
+		<div style="margin-bottom:15px;">
+		
+	<a href="#" class="anchorButton" name="linkFrag:beginButton" id="idc" onclick="var wcall=wicketSubmitFormById('idb', '?x=Nr*Bti3rTaxjs09Kgy-qkqm9B53UWoGMgBOYUmYF*OuR46vlbg5FEoGoQ9L--e3CxLa5d5ln4x1havuF-b6lFgmmrjWEF2bWBggW-jZKbzhHiuhUPK6LbRThSxJiJFPpcPoR4At*MREGwLx2iw1YNCgFapvySA6IoylURF7gvo4', 'linkFrag:beginButton' ,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('idb')}.bind(this));;; return false;"><span>Click Here</span></a>
+
+		<span type="text" id="searchButtonInput" class="acknowlegeText">To search public records.</span>
+		</div>
+		
+		<div>
+		
+	
+
+		
+		</div>
+		
+	</div>
+	
+	<div id="notice" class="subsection1 bgClr2">
+		<span type="text" id="alertTextInput" class="containerSpacing"></span>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<a id="ide" style="display:none"></a>
+		<a id="idf" style="display:none"></a>
+	</form>	
+
+</div>
+</div>
+
+<div id="id4"></div>
+<div id="id10" style="display:none">
+	<div id="id11" style="display:none"></div>
+</div>
+<div class="ui-layout-south" style="display: block;">
+	<div id="footer" role="contentinfo">
+<div id="footerLogo" title="eServices provided by CourtView Justice Solutions.">
+	<span class="visually-hidden">eServices provided by equivant.</span>
+</div>
+<div id="footerContent">
+	<p>CourtView Justice Solutions Inc. an equivant company, Copyright 2020</p>
+	<div class="versionId">1.25.06</div>
+	
+	
+</div>
+</div>
+</div>
+<div id="sessionLocaleLanguage" class="hidden">EN-US</div>
+<div id="serverName" class="hidden">xxx.xxx.xxx.xxx</div>
+<div id="sessionId" class="hidden">yyyyyyyyyyyyyy</div>
+<div id="generationTime" class="hidden">0000</div>
+<div id="generationSize" class="hidden">0000</div>
+<div style="display: none;" id="id2">
+	<b><span id="id12" style="display:none"></span></b>
+	<br />
+	<br />
+	<br />
+	<div style="text-align: center;"><img src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif" alt="loading"/></div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var myLayout; // a var is required because this page utilizes: myLayout.allowOverflow() method
+		window.cjsBrowserRenderEndTime = new Date();
+	});
+</script>
+<script type="text/javascript" id="JavaScriptMarkupResponseLastScript"><!--/*--><![CDATA[/*><!--*/
+window.cjsBrowserRenderEndTime = new Date();
+/*-->]]>*/</script>
+
+</body>
+<a hidden href="/kM4ckp0sjx6RP9yyfKT1wUgnQij33tvYbTufhyDXCPE=.html">kM4ckp0sjx6RP9yyfKT1wUgnQij33tvYbTufhyDXCPE=.html</a></html>
