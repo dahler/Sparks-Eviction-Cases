@@ -17,9 +17,14 @@ class PageParser():
     # Determines if the case is commercial (only add residential)
     def isCommercial(self):
         try:
-            caseHeaderJMAX = self.s.find(id="caseHeaderJMAX").find_all("td")[0]
-            case_type_div = caseHeaderJMAX.find_all("td")[1].find("dd")
-            return "Commercial" in self._clean(case_type_div.get_text())
+            #caseHeaderJMAX = self.s.find(id="caseHeaderJMAX").find_all("td")[0]
+            #case_type_div = caseHeaderJMAX.find_all("td")[1].find("dd")
+            caseHeaderJMAX = self.s.find(id="caseHeader").find_all("li")[9]
+            #print(caseHeaderJMAX)
+            #case_type_div = caseHeaderJMAX.find_all("td")[1].find("dd")
+            return "Commercial" in self._clean(caseHeaderJMAX.get_text())
+            #return True;
+
         except IndexError:
             for sec in self.s.find_all("div", class_="caseInfo-col3"):
                 for d in sec.find_all("div"):
@@ -38,9 +43,12 @@ class PageParser():
     # Return Case status
     def get_status(self):
         try:
-            chJMAX = self.s.find(id="caseHeaderJMAX").find_all("td")[0]
-            case_type_div = chJMAX.find_all("td")[2].find("dd")
-            return self._clean(case_type_div.get_text())
+            #chJMAX = self.s.find(id="caseHeaderJMAX").find_all("td")[0]
+            #case_type_div = chJMAX.find_all("td")[2].find("dd")
+
+            chJMAX = self.s.find(id="caseHeader").find_all("li")[3]
+
+            return self._clean(chJMAX.get_text())
         except IndexError:
             chJMAX = self.s.find(id="caseHeaderJMAX").find_all("div")[0]
             case_type_div = chJMAX.find_all("div")[1].find_all("dd")[0]
@@ -49,9 +57,11 @@ class PageParser():
     # Return File date
     def get_file_date(self):
         try:
-            chJMAX = self.s.find(id="caseHeaderJMAX").find_all("td")[0]
-            file_date_div = chJMAX.find_all("td")[4].find("dd")
-            return self._clean(file_date_div.get_text())
+            #chJMAX = self.s.find(id="caseHeaderJMAX").find_all("td")[0]
+            #file_date_div = chJMAX.find_all("td")[4].find("dd")
+            #return self._clean(file_date_div.get_text())
+            chJMAX = self.s.find(id="caseHeader").find_all("li")[5]
+            return self._clean(chJMAX.get_text())
         except IndexError:
             chJMAX = self.s.find(id="caseHeaderJMAX").find_all("div")[0]
             file_date_div = chJMAX.find_all("div")[2].find_all("dd")[0]
@@ -61,15 +71,16 @@ class PageParser():
     def get_parties(self, plaintiffs, defendants):
         parties = self.s.find("div", id="ptyInfo").find_all("div")
 
+        plaintiff = ''
+        defendant = ''
         for p in parties:
             div_text = p.get_text()
-
-            if "- Plaintiff" in div_text:
+            if "- Plaintiff" in div_text and plaintiff == '':
                 plaintiff = self._clean(div_text).split(" -")[0]
-                plaintiff = self.matcher.string_match(plaintiff, plaintiffs)
-            elif "- Defendant" in div_text:
+                #plaintiff = self.matcher.string_match(plaintiff, plaintiffs) !=
+            elif "- Defendant" in div_text and defendant == '':
                 defendant = self._clean(div_text).split(" -")[0]
-                defendant = self.matcher.string_match(defendant, defendants)
+                #defendant = self.matcher.string_match(defendant, defendants)
 
         return (plaintiff, defendant)
 

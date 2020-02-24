@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3e2910b4-09f5-48db-9a19-1b7932eaf1be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/html/quotes-eservices.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/quotes-eservices.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pageParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pageParser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/scraper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3414">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state relative-caret-position="123">
+              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
               <folding>
                 <element signature="e#346#355#0" expanded="true" />
               </folding>
@@ -26,28 +27,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawler.py">
+        <entry file="file://$PROJECT_DIR$/data/2019/Dec/14-13-23.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myScrapper/myScrapper/spiders/example.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myScrapper/myScrapper/spiders/quotes_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="44" selection-start-line="6" selection-start-column="4" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="609">
+              <caret line="5667" column="24" selection-start-line="5667" selection-start-column="13" selection-end-line="5667" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,30 +42,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pageParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="254" column="60" selection-start-line="254" selection-start-column="60" selection-end-line="254" selection-end-column="60" />
+            <state relative-caret-position="242">
+              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
               <folding>
                 <element signature="e#141#176#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/2017/Oct/16-53-13.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78824">
-              <folding>
-                <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/2019/Dec/Search Results - Massachusetts Trial Court 3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3884" />
           </provider>
         </entry>
       </file>
@@ -91,17 +60,29 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>caseHeaderJMAX</find>
+      <find>comme</find>
+      <find>ptyInfo</find>
+      <find>Plaintiff</find>
+      <find>-Plaintiff</find>
+      <find>- Plaintiff</find>
+      <find>csv</find>
+      <find>matcher</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/scraper.py" />
         <option value="$PROJECT_DIR$/src/newPageParser.py" />
-        <option value="$PROJECT_DIR$/src/pageParser.py" />
         <option value="$PROJECT_DIR$/src/myScrapper/myScrapper/spiders/quotes_spider.py" />
         <option value="$PROJECT_DIR$/src/crawler.py" />
+        <option value="$PROJECT_DIR$/src/pageParser.py" />
+        <option value="$PROJECT_DIR$/src/scraper.py" />
       </list>
     </option>
   </component>
@@ -131,12 +112,6 @@
               <item name="SparksEviction" type="b2602c69:ProjectViewProjectNode" />
               <item name="SparksEviction" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="2017" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SparksEviction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SparksEviction" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="2019" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -150,12 +125,6 @@
               <item name="SparksEviction" type="b2602c69:ProjectViewProjectNode" />
               <item name="SparksEviction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SparksEviction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SparksEviction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="myScrapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SparksEviction" type="b2602c69:ProjectViewProjectNode" />
@@ -193,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crawler">
+  <component name="RunManager" selected="Python.scraper">
     <configuration name="crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SparksEviction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -259,8 +228,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.crawler" />
         <item itemvalue="Python.scraper" />
+        <item itemvalue="Python.crawler" />
         <item itemvalue="Python.pageParser" />
       </list>
     </recent_temporary>
@@ -282,12 +251,12 @@
     <frame x="0" y="23" width="1440" height="798" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41666666" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36666667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3287483" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287483" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39889959" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -300,6 +269,22 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/scraper.py</url>
+          <line>241</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/scraper.py</url>
+          <line>196</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/.Python">
@@ -332,45 +317,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myScrapper/myScrapper/spiders/example.py">
+    <entry file="file://$PROJECT_DIR$/data/2019/Dec/Search Results - Massachusetts Trial Court 3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myScrapper/myScrapper/spiders/quotes_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="44" selection-start-line="6" selection-start-column="4" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3414">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <element signature="e#346#355#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pageParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="254" column="60" selection-start-line="254" selection-start-column="60" selection-end-line="254" selection-end-column="60" />
-          <folding>
-            <element signature="e#141#176#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-3884" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/2017/Oct/16-53-13.html">
@@ -382,9 +331,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/2019/Dec/Search Results - Massachusetts Trial Court 3.html">
+    <entry file="file://$PROJECT_DIR$/src/myScrapper/myScrapper/spiders/quotes_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3884" />
+        <state relative-caret-position="285">
+          <caret line="19" column="44" selection-start-line="6" selection-start-column="4" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myScrapper/myScrapper/spiders/example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/2019/Dec/14-12-42.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="4864" column="7371" selection-start-line="4864" selection-start-column="7366" selection-end-line="4864" selection-end-column="7371" />
+          <folding>
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/2019/Dec/14-13-23.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="5667" column="24" selection-start-line="5667" selection-start-column="13" selection-end-line="5667" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pageParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="e#141#176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding>
+            <element signature="e#346#355#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
