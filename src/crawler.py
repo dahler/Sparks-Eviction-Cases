@@ -11,9 +11,7 @@ class MySpider(scrapy.Spider):
 
     def start_requests(self):
         urls = [
-            'http://quotes.toscrape.com/page/1/',
-            'http://quotes.toscrape.com/page/2/',
-            'https://www.masscourts.org/eservices/search.page.3.5?x=gjqNue7Jqoq4haRZvIu12g'
+            'https://www.masscourts.org/eservices/search.page.3.1?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRurMOCC0*djgIAJ1okb3odkJpC5IrYFWs5g'
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
