@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e2910b4-09f5-48db-9a19-1b7932eaf1be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/html/quotes-eservices.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/quotes-eservices.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/csvData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/csvData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2017/Mar/Search Results - Massachusetts Trial Court 6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2017/Mar/Search Results - Massachusetts Trial Court 6_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019/Dec/14-13-23.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019/Dec/14-13-23.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pageParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pageParser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/scraper.py" afterDir="false" />
     </list>
@@ -17,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            <state relative-caret-position="248">
+              <caret line="233" column="8" lean-forward="true" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="8" />
               <folding>
                 <element signature="e#346#355#0" expanded="true" />
               </folding>
@@ -29,11 +32,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/2019/Dec/14-13-23.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="5667" column="24" selection-start-line="5667" selection-start-column="13" selection-end-line="5667" selection-end-column="24" />
+            <state relative-caret-position="-730">
+              <caret line="5706" selection-start-line="5706" selection-end-line="5706" />
               <folding>
                 <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -42,11 +46,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pageParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+            <state relative-caret-position="312">
+              <caret line="98" column="29" lean-forward="true" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
               <folding>
                 <element signature="e#141#176#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/2019/Dec/14-13-18.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-87175">
+              <folding>
+                <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/newPageParser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-69">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -67,8 +91,8 @@
       <find>ptyInfo</find>
       <find>Plaintiff</find>
       <find>-Plaintiff</find>
-      <find>- Plaintiff</find>
       <find>csv</find>
+      <find>- Plaintiff</find>
       <find>matcher</find>
     </findStrings>
   </component>
@@ -81,6 +105,7 @@
         <option value="$PROJECT_DIR$/src/newPageParser.py" />
         <option value="$PROJECT_DIR$/src/myScrapper/myScrapper/spiders/quotes_spider.py" />
         <option value="$PROJECT_DIR$/src/crawler.py" />
+        <option value="$PROJECT_DIR$/data/2019/Dec/14-13-23.html" />
         <option value="$PROJECT_DIR$/src/pageParser.py" />
         <option value="$PROJECT_DIR$/src/scraper.py" />
       </list>
@@ -251,7 +276,7 @@
     <frame x="0" y="23" width="1440" height="798" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36666667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19236112" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -294,16 +319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-430">
           <caret line="16" column="59" lean-forward="true" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/newPageParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -362,21 +377,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/2019/Dec/14-13-18.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87175">
+          <folding>
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/newPageParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/2019/Dec/14-13-23.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="5667" column="24" selection-start-line="5667" selection-start-column="13" selection-end-line="5667" selection-end-column="24" />
+        <state relative-caret-position="-730">
+          <caret line="5706" selection-start-line="5706" selection-end-line="5706" />
           <folding>
             <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pageParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        <state relative-caret-position="312">
+          <caret line="98" column="29" lean-forward="true" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
           <folding>
             <element signature="e#141#176#0" expanded="true" />
           </folding>
@@ -385,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        <state relative-caret-position="248">
+          <caret line="233" column="8" lean-forward="true" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="8" />
           <folding>
             <element signature="e#346#355#0" expanded="true" />
           </folding>

@@ -3,6 +3,7 @@
 #   the raw HTML of the case page
 from stringMatch import StringMatch
 from bs4 import BeautifulSoup
+import re
 
 
 class PageParser():
@@ -73,16 +74,27 @@ class PageParser():
 
         plaintiff = ''
         defendant = ''
+        plaintiffAtt = ''
+        defendantAtt = ''
         for p in parties:
             div_text = p.get_text()
             if "- Plaintiff" in div_text and plaintiff == '':
                 plaintiff = self._clean(div_text).split(" -")[0]
+                result = re.findall(r'AttorneyAttorney.+?Bar', self._clean(div_text))
+                if (len(result) > 0):
+                    res = result[0];
+                    plaintiffAtt = res[16:len(res)-3]
+
                 #plaintiff = self.matcher.string_match(plaintiff, plaintiffs) !=
             elif "- Defendant" in div_text and defendant == '':
                 defendant = self._clean(div_text).split(" -")[0]
+                result = re.findall(r'AttorneyAttorney.+?Bar', self._clean(div_text))
+                if (len(result) > 0):
+                    res = result[0];
+                    defendantAtt = res[16:len(res) - 3]
                 #defendant = self.matcher.string_match(defendant, defendants)
 
-        return (plaintiff, defendant)
+        return (plaintiff, defendant, plaintiffAtt, defendantAtt)
 
     # Return full Docket text
     def get_docket(self):

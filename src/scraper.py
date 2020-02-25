@@ -181,7 +181,7 @@ def parse_files_nodb(directory):
     #d_list = dbToList("""SELECT DISTINCT defendant FROM evictions""", c)
 
     p_list=[];
-    p_list.append(["Case Number", "Status", "FIle Date", "Plaintiff", "Deffendant", "Property Address", "Docket",
+    p_list.append(["Case Number", "Status", "FIle Date", "Plaintiff", "P-Attorney",  "Deffendant", "D-Attorney","Property Address", "Docket",
                    "Judgement Date", "Judgement Type", "JudgeMent Method", "Judgement Total", "Execution Total"])
     filepaths =[];
 
@@ -245,10 +245,13 @@ def parse_page_nodb(parser, file):
         res.append(status)
         file_date = parser.get_file_date()
         res.append(file_date)
-        plaintiff, defendant = parser.get_parties('', '')
+        plaintiff, defendant, plaintiffAtt, defendantAtt  = parser.get_parties('', '')
 
         res.append(plaintiff)
+        res.append(plaintiffAtt)
         res.append(defendant)
+        res.append(defendantAtt)
+
         property_addr = parser.get_address()
         res.append(property_addr)
         docket = parser.get_docket()
