@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/derry/Documents/aal/CS506/Sparks/SparksEviction/venv"
+VIRTUAL_ENV="/Users/derry/Documents/aal/CS506/Sparks/Sparks-Eviction-Cases/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

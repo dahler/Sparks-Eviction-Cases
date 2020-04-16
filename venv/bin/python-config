@@ -1,4 +1,4 @@
-#!/Users/derry/Documents/aal/CS506/Sparks/SparksEviction/venv/bin/python
+#!/Users/derry/Documents/aal/CS506/Sparks/Sparks-Eviction-Cases/venv/bin/python
 
 import sys
 import getopt

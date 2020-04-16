@@ -189,12 +189,29 @@ def addDistrict(data, districts):
         if row['DISTRICT'] == 0.0:
             try: 
                 if row['Property Address'] != None:
-                   point = Point( data['longitude'].iloc[index], data['latitude'].iloc[index])
+                   print(data['longitude'].iloc[index], data['latitude'].iloc[index])
+                   point = Point(float(data['longitude'].iloc[index]), float(data['latitude'].iloc[index]))
+                   print(point)
                    data.at[index, 'DISTRICT'] = getRegions(point, districts)
             except:
                 print ("No data for "+ row['Property Address'])
     print (data.head())
     data.to_csv('withLatDistrict.csv')    
+
+def InsertNoneExistingCoordinate(maindata, secdata):
+    for index, row in maindata.iterrows(): 
+        if row['DISTRICT'] == 0.0:
+            try: 
+                if row['Property Address'] != None:
+                   df1 = secdata[secdata['Address'].str.contains(row['Property Address'].strip())]
+                   print(df1.Lat.values[0])
+                   maindata.at[index, 'latitude'] = df1.Lat.values[0]
+                   maindata.at[index, 'longitude'] = df1.Lon.values[0]
+            except:
+                print ("No data for "+ row['Property Address'])
+    print (maindata.head())
+    maindata.to_csv('withLatDistrict1.csv')    
+
 
 
 def main():
@@ -202,14 +219,12 @@ def main():
     #d = readData(filename)
     #addGeo(d)
 
-    #create map
-    filename = './csv/withLatDistrict.csv'
+    
+    filename = './csv/withLatDistrictNoDup.csv'
     d = readData(filename)
-    #print(d.head())
+    # print(d.shape)
 
     #districts = './FY2020_Residential_Districts/ASSESSING_ResidentialDistrictsFY2020.geojson'
-
-    #districts_json = json.load(open(districts))
     #districts_json = geopandas.read_file(districts)
     #addDistrict(d, districts_json)
     
