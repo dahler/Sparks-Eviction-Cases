@@ -9,7 +9,7 @@ from folium.plugins import HeatMap
 import geopandas
 import json
 from shapely.geometry import Point
-from shapely.geometry.polygon import Polygon
+from shapely.geometry.multipolygon import MultiPolygon
 import branca
 
 def readData(filename): 
@@ -56,7 +56,7 @@ def generateBaseMap(defaultlocation=[42.373611,-71.110558]):
     basemap = folium.Map(location=defaultlocation, zoom_start =14, tiles='Mapbox Bright')
     return basemap
 
-def createMapPlot(df):
+def createMapPlot(df, districts_json):
     namestr = "peta"
     color=['blue']
     base_map=generateBaseMap()
@@ -71,10 +71,10 @@ def createMapPlot(df):
                         fill_opacity=0.5, 
                         line_opacity=0.5) """
 
-    districts = './FY2020_Residential_Districts/ASSESSING_ResidentialDistrictsFY2020.geojson'
+    #districts = './FY2020_Residential_Districts/ASSESSING_ResidentialDistrictsFY2020.geojson'
 
     #districts_json = json.load(open(districts))
-    districts_json = geopandas.read_file(districts)
+    #districts_json = geopandas.read_file(districts)
     print(districts_json.head())
 
     variable = 'eviction-count' 
@@ -84,7 +84,7 @@ def createMapPlot(df):
     for index, row in districts_json.iterrows(): 
         if row[variable] == 0.0:
             try: 
-                dis = row['DISTRICT']
+                dis = row['name']
                 #print (dis)
                 count  = df[df["DISTRICT"] == dis].count()['DISTRICT']
                 districts_json.at[index, variable] = count 
@@ -93,7 +93,7 @@ def createMapPlot(df):
                 print ("Error")
 
     print(districts_json.head())
-    dc = districts_json[['DISTRICT',variable]].sort_values(by =variable, ascending = False)
+    dc = districts_json[['name',variable]].sort_values(by =variable, ascending = False)
     dc.reset_index(inplace = True)
     leg_brks = list(dc[dc.index.isin([0, 4, 9, 19, 29, 49, 79])][variable])
     leg_brks.append(0)
@@ -114,7 +114,7 @@ def createMapPlot(df):
                                 else 0.7},
     highlight_function= lambda x: {"weight":3, 'color':'black', 'fillOpacity':0.9},
     tooltip= folium.features.GeoJsonTooltip(
-        fields=['DISTRICT', 'eviction-count'],
+        fields=['name', 'eviction-count'],
         aliases=['District No', '# Eviction']
     ),
     ).add_to(base_map)
@@ -166,35 +166,37 @@ def getGeoAdress(add=" "):
 
 def chekInsidePolygon():
     point = Point(0.5, 0.5)
-    polygon = Polygon([(0, 0), (0, 1), (1, 1), (1, 0)])
-    print(polygon.contains(point))
+    #polygon = Polygon([(0, 0), (0, 1), (1, 1), (1, 0)])
+    #print(polygon.contains(point))
 
 def getRegions(point, regiondf):
    
     res = 0
-    print(point)
+    
     for index, row in regiondf.iterrows():
-        p = Polygon(row['geometry'])
-        #print(p)
+        print(row['geometry'])
+        p = MultiPolygon(row['geometry'])
+        print(p)
         if p.contains(point):
-            res = row["DISTRICT"]
+            res = row["name"]
             break
+        print(res)
     return res
 
 def addDistrict(data, districts):
     if 'DISTRICT'  not in data.columns:
-        data['DISTRICT'] = 0.0
+        data['DISTRICT'] = ''
+   
 
     for index, row in data.iterrows(): 
-        if row['DISTRICT'] == 0.0:
-            try: 
+        if row['DISTRICT'] == '':
+            #try: 
                 if row['Property Address'] != None:
-                   print(data['longitude'].iloc[index], data['latitude'].iloc[index])
                    point = Point(float(data['longitude'].iloc[index]), float(data['latitude'].iloc[index]))
                    print(point)
                    data.at[index, 'DISTRICT'] = getRegions(point, districts)
-            except:
-                print ("No data for "+ row['Property Address'])
+            #except:
+            #    print ("No data for "+ row['Property Address'])
     print (data.head())
     data.to_csv('withLatDistrict.csv')    
 
@@ -220,15 +222,24 @@ def main():
     #addGeo(d)
 
     
-    filename = './csv/withLatDistrictNoDup.csv'
+    filename = './csv/withLatDistrict.csv'
     d = readData(filename)
     # print(d.shape)
 
-    #districts = './FY2020_Residential_Districts/ASSESSING_ResidentialDistrictsFY2020.geojson'
+    #districts = './csv/NHpolygon.geojson'
     #districts_json = geopandas.read_file(districts)
+
+    #print(districts_json)
     #addDistrict(d, districts_json)
+    d['Judgement Total']  = d['Judgement Total'].replace(',','', regex=True)
+    d['Judgement Total'] = d['Judgement Total'].astype(float)
+
+    d['Execution Total']  = d['Execution Total'].replace(',','', regex=True)
+    d['Execution Total'] = d['Execution Total'].astype(float)
     
-    createMapPlot(d)
+    d.to_csv('withLatDistrict.csv')  
+    
+    #createMapPlot(d,districts_json)
 
     #setColor(0, 500)
     #chekInsidePolygon()
