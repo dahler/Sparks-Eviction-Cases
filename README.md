@@ -1,4 +1,4 @@
 # SparksEviction
-Eviction Crawler
+Eviction Cases Data Processing and Presentation
 
-This is project to look at eviction cases in the city of Cambridge, MA
+This project is to look at eviction cases in the city of Cambridge, MA
