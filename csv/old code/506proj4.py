@@ -2,7 +2,7 @@ import numpy as np
 import csv
 import pandas as pd
 
-court = list(csv.reader(open("./csv/data_with_median_income_kp1.csv",'r')))
+court = list(csv.reader(open("./csv/cleanData.csv",'r')))
 
 #court = np.array(court)
 #print(court)

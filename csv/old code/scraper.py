@@ -52,7 +52,7 @@ def parse_files_nodb(directory):
 
     #print(p_list)
     direct = "./csv"
-    with open(direct + "/" +"dataFromDocket.csv", 'w') as f:
+    with open(direct + "/" +"csvData.csv", 'w') as f:
         csv.writer(f).writerows(p_list)
 
 def parse_page_nodb(parser, file):

@@ -2,7 +2,7 @@ import pandas as pd
 
 data = pd.read_csv('./csv/cleanData.csv')
 
-income = pd.read_csv('./csv/American_Community_Survey_2013_-_17_Estimates_by_Neighborhood__Median_Income.csv')
+income = pd.read_csv('.csv/American_Community_Survey_2013_-_17_Estimates_by_Neighborhood__Median_Income.csv')
 
 def getIncome(Nhood):
     if Nhood == '0':
@@ -14,4 +14,4 @@ def getIncome(Nhood):
 
 data = data.assign(median_income=lambda df: df.DISTRICT.apply(getIncome))
 
-data.to_csv('cleanData.csv')
+data.to_csv('data_with_median_income.csv')

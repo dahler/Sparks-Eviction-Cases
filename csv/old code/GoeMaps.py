@@ -43,7 +43,7 @@ def addGeo(data):
                 print (row['Property Address'])
             time.sleep(1.0 - ((time.time() - starttime) % 1.0))
     print (data.head())
-    data.to_csv('cleanData.csv')    
+    data.to_csv('withLat1.csv')    
 
     
 
@@ -198,7 +198,7 @@ def addDistrict(data, districts):
             #except:
             #    print ("No data for "+ row['Property Address'])
     print (data.head())
-    data.to_csv('cleanData.csv')    
+    data.to_csv('withLatDistrict.csv')    
 
 def InsertNoneExistingCoordinate(maindata, secdata):
     for index, row in maindata.iterrows(): 
@@ -212,7 +212,7 @@ def InsertNoneExistingCoordinate(maindata, secdata):
             except:
                 print ("No data for "+ row['Property Address'])
     print (maindata.head())
-    maindata.to_csv('cleanData.csv')    
+    maindata.to_csv('withLatDistrict1.csv')    
 
 
 
@@ -222,24 +222,24 @@ def main():
     #addGeo(d)
 
     
-    filename = './csv/cleanData.csv'
+    filename = './csv/withLatDistrict.csv'
     d = readData(filename)
     # print(d.shape)
 
-    districts = './csv/NHpolygon.geojson'
-    districts_json = geopandas.read_file(districts)
+    #districts = './csv/NHpolygon.geojson'
+    #districts_json = geopandas.read_file(districts)
 
     #print(districts_json)
     #addDistrict(d, districts_json)
-    #d['Judgement Total']  = d['Judgement Total'].replace(',','', regex=True)
-    #d['Judgement Total'] = d['Judgement Total'].astype(float)
+    d['Judgement Total']  = d['Judgement Total'].replace(',','', regex=True)
+    d['Judgement Total'] = d['Judgement Total'].astype(float)
 
-    #d['Execution Total']  = d['Execution Total'].replace(',','', regex=True)
-    #d['Execution Total'] = d['Execution Total'].astype(float)
+    d['Execution Total']  = d['Execution Total'].replace(',','', regex=True)
+    d['Execution Total'] = d['Execution Total'].astype(float)
     
-    #d.to_csv('cleanData.csv')  
+    d.to_csv('withLatDistrict.csv')  
     
-    createMapPlot(d,districts_json)
+    #createMapPlot(d,districts_json)
 
     #setColor(0, 500)
     #chekInsidePolygon()

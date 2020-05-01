@@ -3,7 +3,7 @@ import pandas as pd
 import string
 
 
-data = pd.read_csv('./csv/cleanData.csv', sep=',', encoding='latin-1')
+data = pd.read_csv('./csv/withLatDistrictNoDup.csv', sep=',', encoding='latin-1')
 number = pd.read_csv("./csv/housingstat.csv")
 
 data = data[data['Property Address'].notnull()]
@@ -86,4 +86,4 @@ for i in range(data.shape[0]):
 
 print(data)
 
-data.to_csv('cleanData.csv') 
+data.to_csv('withLatDistrictUnit.csv') 
