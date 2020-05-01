@@ -90,6 +90,7 @@ It will add another column Address (standardize address )and Units
 BY using previous data (csv file and American_Community_Survey_2013_-_17_Estimates_by_Neighborhood__Median_Income) run get_median_income.py
 
 ./csv/cleanData.csv is the final data we get from process 1 to 6 
+
 7.    To do data science analysis (clustering)
 Run clustering.py
 It produces plot 
